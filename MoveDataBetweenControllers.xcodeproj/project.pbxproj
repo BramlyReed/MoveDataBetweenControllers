@@ -12,6 +12,7 @@
 		8566CDCB27A07EB60006D967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8566CDCA27A07EB60006D967 /* ViewController.swift */; };
 		8566CDD027A07EC00006D967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8566CDCF27A07EC00006D967 /* Assets.xcassets */; };
 		8566CDD327A07EC00006D967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8566CDD127A07EC00006D967 /* LaunchScreen.storyboard */; };
+		8566CDE327A6F8A00006D967 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8566CDE227A6F8A00006D967 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8566CDCF27A07EC00006D967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8566CDD227A07EC00006D967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8566CDD427A07EC00006D967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8566CDE227A6F8A00006D967 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8566CDCF27A07EC00006D967 /* Assets.xcassets */,
 				8566CDD127A07EC00006D967 /* LaunchScreen.storyboard */,
 				8566CDD427A07EC00006D967 /* Info.plist */,
+				8566CDE227A6F8A00006D967 /* SecondViewController.swift */,
 			);
 			path = MoveDataBetweenControllers;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8566CDE327A6F8A00006D967 /* SecondViewController.swift in Sources */,
 				8566CDCB27A07EB60006D967 /* ViewController.swift in Sources */,
 				8566CDC727A07EB50006D967 /* AppDelegate.swift in Sources */,
 				8566CDC927A07EB50006D967 /* SceneDelegate.swift in Sources */,
