@@ -60,10 +60,6 @@ class ViewController: UIViewController {
     NotificationCenter.default.addObserver(self, selector: #selector(onNotification(notification:)), name: Notification.Name(rawValue: "Notif"), object: nil)
   }
   
-  override func viewDidLayoutSubviews() {
-    scrollView.contentSize = CGSize(width: view.frame.width - 20, height: view.frame.height)
-  }
-  
   deinit {
     NotificationCenter.default.removeObserver(Notification.Name("Notif"))
   }
@@ -81,7 +77,7 @@ class ViewController: UIViewController {
         scrollView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5),
         scrollView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -5),
         scrollView.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -5),
-        scrollView.topAnchor.constraint(equalTo: view.topAnchor)
+        scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
       ]
     )
   }
@@ -93,7 +89,7 @@ class ViewController: UIViewController {
         labelWithExplonation.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
         labelWithExplonation.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
         labelWithExplonation.topAnchor.constraint(equalTo: scrollView.topAnchor),
-        labelWithExplonation.heightAnchor.constraint(equalTo: view.heightAnchor)
+        labelWithExplonation.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)
       ]
     )
   }
